@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;500&display=swap');
+
+* { font-family: 'Signika Negative', sans-serif; box-sizing: border-box;}
+
+body {
+     height: 100vh;
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+}
+
+header {
+     width: 100%;
+     margin-inline: auto;
+}
+
+header h1 {
+     width: 100%;
+     height: 600px;
+     background-image: url(/img/44.jpg);
+     background-size: cover;
+     font-size: 8rem;
+     color: #FF731D;
+     text-shadow: 8px 8px 5px #ffffff;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.navigasi {
+     max-width: 100%;
+     width: 100%;
+     margin-inline: auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     position: fixed;
+     background-color: #1746A2;
+     padding: 15px;
+}
+
+.navigasi nav ul {
+     padding-left: 10px;
+     padding-right: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.navigasi nav ul li {
+     list-style-type: none;
+}
+
+.navigasi nav ul li a {
+     text-decoration: none;
+     font-size: 1.2rem;
+     font-weight: 500;
+     color: #ffffff;
+     padding: .4rem 1.2rem;
+     border-radius: 10px;
+     transition: all .15s ease-in-out;
+}
+
+.navigasi nav ul li:hover a {
+     background-color: #FF731D;
+     color: #1746A2;
+}
+
+main {
+     line-height: 30px;
+     max-width: 100%;
+     margin-inline: auto;
+     display: flex;
+     border-radius: 10px;
+     gap: 2rem;
+     padding: 20px;
+     font-weight: 300;
+}
+
+main .content {
+     width: 75%;
+     font-size: 1.1rem;
+     font-weight: 350;
+}
+
+main .content #Beranda img {
+     width: 40%;
+     display: block;
+     margin: auto;
+}
+
+main .gallery-container {
+     display: grid;
+     grid-template-columns: auto auto auto;
+}
+
+main .gallery-container img {
+     width: 100%;
+     border-radius: 5px;
+     box-shadow: 4px 4px 5px 3px #020202;
+}
+
+/* main .content  {
+
+} */
+
+main aside {
+     width: 25%;
+     padding: 20px;
+     background-color: #bacdf3;
+     border-radius: 10px;
+     font-size: 1.1rem;
+     text-align: center;
+}
+
+main aside h2 {
+     text-align: center;
+}
+
+main aside img {
+     display: flex;
+     margin: auto;
+     border-radius: 10px;
+     box-shadow: 3px 3px 5px 1px #020202;
+}
+
+main aside article {
+     padding-top: 15px;
+}
+
+main .card {
+     box-shadow: 2px 2px 1px 2px #1746A2;
+     border-radius: 5px;
+     padding: 10px;
+     background-color: #ffffff;
+}
+
+.card .kontak {
+     padding-left: 20px;
+     padding-bottom: 20px;
+}
+
+.contact {
+     box-sizing : border-box;
+     width: 50%;
+     padding: 10px;
+     font-size: 11pt;
+     margin-bottom: 20px;
+}
+
+.submit {
+     background: #46de4b;
+	color: white;
+	font-size: 10pt;
+	width: 10%;
+	border: none;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+footer {
+     max-width: 100%;
+     width: 100%;
+     margin-inline: auto;
+     display: flex;
+     flex-direction: column;
+
+     background-color: #1746A2;
+}
+
+footer p {
+     text-align: center;
+}
+
+footer .medsos {
+     padding-top: 30px;
+     gap: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
+}
+
+@media screen and (max-width: 1200px){
+     main{
+          flex-flow: row nowrap;
+     }
+}
+
+@media screen and (max-width:768px) {
+     header {
+          flex-flow: column nowrap;
+          width: 100%;
+     }
+
+     header h1 {
+          font-size: 50px;  
+     }
+
+     main {
+          flex-flow: column wrap;
+     }
+
+     main .content {
+          width: 100%;
+     }
+
+     .navigasi nav ul {
+          justify-content: center;
+          flex-direction: column;
+          gap: 1rem 1rem;
+     }
+
+     main .gallery-container {
+          grid-template-columns: auto;
+     }
+
+     main aside {
+          flex-flow: column wrap;
+          align-self: stretch;
+          width: 100%;
+     }
+}
